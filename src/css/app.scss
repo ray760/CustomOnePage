@@ -1,0 +1,18 @@
+@import 'vendors';
+
+$purp: purple;
+
+body {
+  // background-color: $purp;
+  // background-image: url('../imgs/texture.jpg');
+}
+
+.site-section {
+  background-color: $purp;
+  height: 95vh;
+  width: 100%;
+}
+
+.top-section {
+  margin-top: 15px;
+}
