@@ -43,6 +43,8 @@
     "browser-sync": "^2.24.4",
     "hoek": "^5.0.3",
     "jquery": "^3.3.1",
-    "popper": "^1.0.1"
+    "popper": "^1.0.1",
+    "react-anchor-link-smooth-scroll": "^1.0.10",
+    "reactstrap": "^6.1.0"
   }
 }
