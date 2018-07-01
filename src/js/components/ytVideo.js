@@ -4,9 +4,9 @@ class YtVideo extends Component {
 
   constructor(props) {
     super(props);
-
+    
     this.state = {
-      vidId: 'fKhPOgYQTlU'
+      vidId: props.video
     }
   }
 

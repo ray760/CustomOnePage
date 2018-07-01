@@ -1,31 +1,50 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import YTVideo from './ytVideo'
 
-const BsModal = ({vidId}) => {
+class BsModal extends Component {
 
-  // const url = `https://www.youtube.com/embed/${videoId}`;
+  constructor(props) {
+    super(props);
+    this.state = {
+      centered: true,
+      modal: false,
+      size: 'lg',
+      vidId: null
+    };
 
-  return (
-    <div className="modal fade" id="ytModal" tabIndex="-1" role="dialog" aria-labelledby="ytModalTitle" aria-hidden="true">
-      <div className="modal-dialog modal-dialog-centered" role="document">
-        <div className="modal-content">
-          <div className="modal-header">
-            <h5 className="modal-title" id="ytModalTitle">Modal title</h5>
-            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div className="modal-body">
-            <div className="responsive-ytv">
-                <iframe frameBorder="0" className="embed-responsive-item"></iframe>
-            </div>
-          </div>
-          <div className="modal-footer">
-            <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
+    this.toggle = this.toggle.bind(this);
+  }
+
+  onSetVidId(vidId) {
+    this.setState({ vidId })
+    this.toggle();
+  }
+
+  toggle() {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <a href="#" onClick={this.toggle}>TOGGLE</a>
+        <b>{this.state.vidId}</b>
+        <Modal centered={this.state.centered} size={this.state.size} isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+          <ModalBody>
+            <YTVideo video={this.state.vidId} />
+          </ModalBody>
+          <ModalFooter>
+            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
+            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+          </ModalFooter>
+        </Modal>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default BsModal;

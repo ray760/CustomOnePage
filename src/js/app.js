@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import YTVideo from './components/ytVideo'
+import AdsModal from './components/modal'
 import IntroDiv from './components/intro';
 import AboutDiv from './components/about-me';
 import Auth0Div from './components/about-auth0';
@@ -12,39 +13,25 @@ import Auth0Div from './components/about-auth0';
 class App extends Component {
 
   constructor(props) {
-    super(props);
-    this.state = {
-      centered: true,
-      modal: false,
-      size: 'lg'
-    };
-
-    this.toggle = this.toggle.bind(this);
+    super(props)
   }
 
-  toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
+  accessModal(vidId) {
+    this.refs.child.onSetVidId(vidId);
   }
 
   render() {
 
     return (
       <div>
-        <Modal centered={this.state.centered} size={this.state.size} isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-          <ModalBody>
-            <YTVideo />
-          </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-          </ModalFooter>
-        </Modal>
-
+        /* 'ref' allows parent to reference child functions */
+        <AdsModal ref="child" />
         <IntroDiv />
-        <AboutDiv modal={this.toggle} />
+        <AboutDiv onVideoSelect={ 
+          vidId => {
+            this.accessModal(vidId)
+          }
+        } />
         <Auth0Div />
       </div>
     )

@@ -19,7 +19,22 @@ class aboutDiv extends Component {
           <div className="col-md-4 offset-md-2">
             <h6>MY LIFE</h6>
             <p>
-              I enjoy spending a ton of time perfecting the artistry of parenthood and watching my two boys grow, locking in just the two of us time with my wife to watch "Game of Thrones" or "The Walking Dead", and traveling whenever the opportunity presents itself. I entered the development/engineering industry back in the Flash ActionScript days and evolved with the industry as times changed. Some HTML 5 ad evolution, <a data-vidid="P8Fj4b94WhY" data-toggle="modal" data-target="#ytModal" href="#" onClick={this.props.modal}>Thing On,</a><a href="#">Thing Two,</a> and <a href="#">Thing Three</a>. I enjoy sitting in the middle and collaborating with Designers and Back-End developers to bring ideas to life.
+              I enjoy spending a ton of time perfecting the artistry of parenthood and watching my two boys grow, locking in just the two of us time with my wife to watch "Game of Thrones" or "The Walking Dead", and traveling whenever the opportunity presents itself. I entered the development/engineering industry back in the Flash ActionScript days and evolved with the industry as times changed. Some HTML 5 ad evolution, <a data-toggle="modal" data-target="#ytModal" href="#" onClick={
+                  (evt) => {
+                    evt.preventDefault()
+                    this.props.onVideoSelect("P8Fj4b94WhY")
+                  }
+                }>Thing One,</a><a data-toggle="modal" data-target="#ytModal" href="#" onClick={
+                  (evt) => {
+                    evt.preventDefault()
+                    this.props.onVideoSelect("fKhPOgYQTlU")
+                  }
+                }>Thing Two,</a> and <a data-toggle="modal" data-target="#ytModal" href="#" onClick={
+                  (evt) => {
+                    evt.preventDefault()
+                    this.props.onVideoSelect("EOQqnArREmg")
+                  }                
+                }>Thing Three</a>. I enjoy sitting in the middle and collaborating with Designers and Back-End developers to bring ideas to life.
             </p>
 
           </div>
