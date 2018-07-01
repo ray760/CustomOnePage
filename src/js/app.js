@@ -24,7 +24,7 @@ class App extends Component {
 
     return (
       <div>
-        /* 'ref' allows parent to reference child functions */
+        {/* 'ref' allows parent to reference child functions */}
         <AdsModal ref="child" />
         <IntroDiv />
         <AboutDiv onVideoSelect={ 

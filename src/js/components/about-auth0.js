@@ -13,7 +13,7 @@ const authDiv = () => {
           </p>
 
           <p>
-            Knowing this would be an arduous endeavor I thought to myself it would be worth it taking a shot to be part of something I find intriguing, cutting edge and full of great minds that could push me and also learn from me as well. I took the time out to make this page because I wanted to set myself apart and let you all know that being part of your team is something that excites me and that feeling is one I haven't felt in a while. If you got this far then I hope that we can talk soon.
+            Knowing this would be an arduous endeavor I thought to myself it would be worth it taking a shot to be part of something I find intriguing, cutting edge and full of great minds that could push me and also learn from me as well. I took the time out to make this page <a href="https://github.com/ray760/CustomOnePage"> (checkout the repo ) </a> because I wanted to set myself apart and let you all know that being part of your team is something that excites me and that feeling is one I haven't felt in a while. If you got this far then I hope that we can talk soon.
           </p>
         </div>
 

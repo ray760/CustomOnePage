@@ -30,8 +30,6 @@ class BsModal extends Component {
   render() {
     return (
       <div>
-        <a href="#" onClick={this.toggle}>TOGGLE</a>
-        <b>{this.state.vidId}</b>
         <Modal centered={this.state.centered} size={this.state.size} isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
