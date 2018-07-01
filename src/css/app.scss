@@ -4,9 +4,6 @@
 $bg: #D3CECB;
 $text: #353535;
 $redShade: #DD1C1A;
-$brown: #664C43;
-$orange: #eb5424;
-$gray: #696969;
 
 body {
   background-color: $bg;
@@ -64,54 +61,6 @@ p {
   }
 
   padding-top: 2rem;
-
-}
-
-.auth0 {
-
-  h1 {
-    color: $redShade;
-  }
-
-  padding-bottom: 2rem;
-
-  .social-icons {
-    margin-top: 3rem;
-  }
-
-  .fa {
-    bottom: 0;
-    color: $text;
-    font-size: 3em;
-    margin: 0 0.938rem;
-    position: relative;
-    transition: all .2s ease-in-out;
-
-    &:hover {
-      bottom: .750rem;
-    }
-  }
-
-  .fa-github-square:hover {
-    color: #000;
-  }
-
-  .fa-linkedin-square:hover {
-    color: #0077B5;
-  }
-
-  .fa-file-word-o:hover {
-    color: #1565c0;
-  }
-
-  .fa-envelope-square:hover {
-    color: $redShade;
-  }
-
-}
-
-.about,
-.auth0 {
 
   a {
     color: $text;
@@ -172,6 +121,60 @@ p {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+  }
+
+}
+
+.auth0 {
+
+  a.repo {
+    color: $text;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+
+    &:hover {
+      color: $redShade;
+    }
+  }
+
+  h1 {
+    color: $redShade;
+  }
+
+  padding-bottom: 2rem;
+
+  .social-icons {
+    margin-top: 3rem;
+  }
+
+  .fa {
+    bottom: 0;
+    color: $text;
+    font-size: 3em;
+    margin: 0 0.938rem;
+    position: relative;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      bottom: .750rem;
+    }
+  }
+
+  .fa-github-square:hover {
+    color: #000;
+  }
+
+  .fa-linkedin-square:hover {
+    color: #0077B5;
+  }
+
+  .fa-file-word-o:hover {
+    color: #1565c0;
+  }
+
+  .fa-envelope-square:hover {
+    color: $redShade;
   }
 
 }
