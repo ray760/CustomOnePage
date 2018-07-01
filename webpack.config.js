@@ -56,7 +56,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      title: 'Webpack Starter Boilerplate',
+      title: 'Hi Auth0, I want to be your next UI Engineer.',
       minify: {
         collapseWhitespace: true
       },

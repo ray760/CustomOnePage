@@ -132,6 +132,8 @@ p {
     font-weight: bold;
     font-style: italic;
     text-decoration: none;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
 
     &:hover {
       color: $redShade;
