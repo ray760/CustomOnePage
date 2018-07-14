@@ -31,14 +31,16 @@ class BsModal extends Component {
     return (
       <div>
         <Modal centered={this.state.centered} size={this.state.size} isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+          {/*<ModalHeader toggle={this.toggle}>Modal title</ModalHeader>*/}
           <ModalBody>
             <YTVideo video={this.state.vidId} />
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-          </ModalFooter>
+          {/*
+            <ModalFooter>
+              <Button color="primary" onClick={this.toggle}>Do Something</Button>
+              <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            </ModalFooter>
+          */}
         </Modal>
       </div>
     )

@@ -43,7 +43,7 @@ class aboutDiv extends Component {
 
             <h6>I'M A DEVELOPER</h6>
             <p>
-              Currently, I work for <a href={'https://www.trusted.com/'}>Trusted.com</a> on a small team distributed throughout the U.S. We've updated the site with a new look, as well as features, with more updates to come in the backlog. We also spend time on a side project <a href={'www.cyberledger.com'}>Cyberledger.com</a> which is in development and getting feedback from potential clients.
+              Currently, I work for <a href={'https://www.trusted.com/'}>Trusted.com</a> on a small team distributed throughout the U.S. We've updated the site with a new look, as well as features, with more updates to come in the backlog. We also spend time on a side project <b><i>Cyberledger</i></b> which is in development and getting feedback from potential clients.
             </p>
 
             <p>
