@@ -47,7 +47,7 @@ class aboutDiv extends Component {
             </p>
 
             <p>
-              Trusted is a great place to work. We communicate well being a distributed team (Slack is amazing and Stride is catching up), I got the opportunity to learn some Kendo UI which I never touched prior, and I get to avoid the tough DMV (D.C, Maryland, Virginia) commutes. But like most folks, I always seek more. Not necessarily stuff or money, but to learn more, grow career-wise and be part of something that is making a huge impact in its space.
+              Trusted is a great place to work. We communicate wellvia Slack being a distributed team, I got the opportunity to learn some Kendo UI which I never touched prior, and I get to avoid the tough DMV (D.C, Maryland, Virginia) commutes. But like most folks, I always seek more. Not necessarily stuff or money, but to learn more, grow career-wise and be part of something that is making a huge impact in its space.
             </p>
 
           </div>
