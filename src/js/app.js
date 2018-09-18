@@ -8,7 +8,7 @@ import YTVideo from './components/ytVideo'
 import AdsModal from './components/modal'
 import IntroDiv from './components/intro';
 import AboutDiv from './components/about-me';
-import Auth0Div from './components/about-auth0';
+import CompanyDiv from './components/about-co';
 
 class App extends Component {
 
@@ -32,7 +32,7 @@ class App extends Component {
             this.accessModal(vidId)
           }
         } />
-        <Auth0Div />
+        <CompanyDiv />
       </div>
     )
 

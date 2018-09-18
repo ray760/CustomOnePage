@@ -3,7 +3,7 @@
 
 $bg: #D3CECB;
 $text: #353535;
-$redShade: #DD1C1A;
+$headerText: #DD1C1A;
 
 body {
   background-color: $bg;
@@ -40,7 +40,7 @@ p {
   padding-bottom: 2rem;
 
   .heavy {
-    color: $redShade;
+    color: $headerText;
   }
 
   p {
@@ -57,7 +57,7 @@ p {
   backface-visibility: hidden;
 
   h1 {
-    color: $redShade;
+    color: $headerText;
   }
 
   padding-top: 2rem;
@@ -125,7 +125,7 @@ p {
 
 }
 
-.auth0 {
+.company {
 
   a.repo {
     color: $text;
@@ -136,12 +136,12 @@ p {
     transition: color 0.2s;
 
     &:hover {
-      color: $redShade;
+      color: $headerText;
     }
   }
 
   h1 {
-    color: $redShade;
+    color: $headerText;
   }
 
   padding-bottom: 2rem;
@@ -176,7 +176,7 @@ p {
   }
 
   .fa-envelope-square:hover {
-    color: $redShade;
+    color: $headerText;
   }
 
 }
